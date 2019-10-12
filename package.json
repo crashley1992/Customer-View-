@@ -1,0 +1,26 @@
+{
+  "name": "Customer-View-",
+  "version": "1.0.0",
+  "description": "Using MySQL Database and Node to track customer info",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crashley1992/Customer-View-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crashley1992/Customer-View-/issues"
+  },
+  "homepage": "https://github.com/crashley1992/Customer-View-#readme"
+}
