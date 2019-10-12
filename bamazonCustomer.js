@@ -60,7 +60,7 @@ function askUser() {
                 //storing quanitiy response in avilableStock
                 let availableStock = res[0].stock_quantity;
                 //test to make sure a value was being returned
-                console.log(availableStock + ' test for avail');
+                console.log(availableStock + ' total product available');
                 //checks is avilable stock is less that what userInput is
                 if(availableStock < quanitity) {
                     console.log("Not enough in stock");
@@ -69,7 +69,7 @@ function askUser() {
                     console.log('Your total is $' + (res[0].price * quanitity));
                     let newAmountOfProduct =  availableStock - quanitity;
                     //tests if new amount is returning correctly
-                    console.log(newAmountOfProduct + 'test for new amount');
+                    console.log(newAmountOfProduct + ' product left');
                     //query to update table after items have been selected
                     connection.query('UPDATE bamazon.products SET stock_quantity =' + newAmountOfProduct + ' WHERE item_id=' + itemId, (err, res) => {
                         if (err) throw err;
