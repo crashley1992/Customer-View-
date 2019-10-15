@@ -1,7 +1,7 @@
 # Customer-View-
 Using MySQL Database and Node to track customer info
 
-This is an Amazon-like storefront using MySQL and Node.js to display product info through the console. The app will take in orders from customers and delpete stock from the store's inventory. 
+This is an Amazon-like storefront using MySQL and Node.js to display product info through the console. The app will take in orders from customers and deplete stock from the store's inventory. 
 
 Node packages used:
 - inquirer
