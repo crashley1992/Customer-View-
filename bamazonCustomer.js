@@ -22,9 +22,8 @@ connection.connect((err) => {
     console.log(`connected as id ${connection.threadId}`);
     console.log("Welcome to bamazon");
     //function that displays table info
-    displayProducts();
     //function asks user what product they want to purchase
-    askUser();
+    displayProducts();
 });
 
 
@@ -34,6 +33,7 @@ function displayProducts() {
         if (err) throw err;
         console.log(res);
         //connection.end();
+        askUser();
     });
 }
 
@@ -80,7 +80,7 @@ function askUser() {
             })
     });
 }
-
+//will run through another transaction depending on if user selects yes or no.
 function continueShopping() {
     inquirer.prompt([
         {
